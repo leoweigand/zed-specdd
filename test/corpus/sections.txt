@@ -1,0 +1,132 @@
+==================
+Sections and titles
+==================
+Spec: Example
+Purpose:
+  Hello
+Scenario: First
+  Given input
+Example:
+  output
+
+---
+
+(source_file
+  (section
+    (section_header
+      (section_name)
+      (section_title)))
+  (section
+    (section_header
+      (section_name))
+    (body_entry
+      (text)))
+  (section
+    (section_header
+      (section_name)
+      (section_title))
+    (body_entry
+      (scenario_step
+        (step_keyword)
+        (text))))
+  (section
+    (section_header
+      (section_name))
+    (body_entry
+      (text))))
+
+==================
+Task IDs are not comments
+==================
+Spec: Tasks
+Tasks:
+  [x] #12 Done
+  [ ] Open
+Must:
+  [x] prose
+
+---
+
+(source_file
+  (section
+    (section_header
+      (section_name)
+      (section_title)))
+  (tasks_section
+    (tasks_header)
+    (task
+      (task_marker)
+      (task_id)
+      (text))
+    (task
+      (task_marker)
+      (text)))
+  (section
+    (section_header
+      (section_name))
+    (body_entry
+      (text)
+      (text))))
+
+==================
+Comments and continuation text
+==================
+# Spec: ignored
+Spec: Comments
+Must:
+  Text # ordinary prose
+    Given continuation
+  # Comment
+
+---
+
+(source_file
+  (comment)
+  (section
+    (section_header
+      (section_name)
+      (section_title)))
+  (section
+    (section_header
+      (section_name))
+    (body_entry
+      (text)
+      (text)
+      (text)
+      (text))
+    (continuation
+      (text)
+      (text))
+    (comment)))
+
+==================
+References and code
+==================
+Spec: References
+References:
+  ./src/**
+  @Thing
+  Use `code` here.
+  email@example.com \@literal
+
+---
+
+(source_file
+  (section
+    (section_header
+      (section_name)
+      (section_title)))
+  (section
+    (section_header
+      (section_name))
+    (body_entry
+      (path))
+    (body_entry
+      (symbol_reference))
+    (body_entry
+      (text)
+      (inline_code)
+      (text))
+    (body_entry
+      (text)
+      (text))))

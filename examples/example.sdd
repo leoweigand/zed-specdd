@@ -1,0 +1,47 @@
+Spec: Itinerary
+Platform: TypeScript
+
+# Open this file in Zed to try the extension.
+Purpose:
+  Keep a trip itinerary organised by day.
+
+Structure:
+  ./src/itinerary.ts: itinerary implementation
+
+Can modify:
+  ./src/**
+  ./test/*.ts
+
+Depends on:
+  @TripStorage
+
+Must:
+  Call @Itinerary.addPlace before returning.
+  Use `TripStorage` to save changes.
+  Validate the place name before saving
+    and before updating trip days.
+
+Must not:
+  Purchase bookings or tickets.
+
+Tasks:
+  [x] #1 Define the itinerary contract.
+  [ ] #2 Implement input validation.
+  [X] Add a storage interface.
+  [!] Wait for storage availability.
+  [?] Decide how to handle duplicate places.
+  [-] Add booking integration.
+
+Done when:
+  Invalid input is rejected and valid changes are saved.
+
+Scenario: missing place name
+  Given the place name is empty
+  When the person adds a place
+  Then validation fails
+  And no itinerary item is stored
+  But existing items remain available
+
+Example: validation result
+  input place name: empty
+  result error: missing place name

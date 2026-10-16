@@ -1,0 +1,32 @@
+{
+  "SpecDD specification": {
+    "prefix": "spec",
+    "description": "Create a SpecDD specification",
+    "body": [
+      "Spec: ${1:Subject}",
+      "",
+      "Purpose:",
+      "  ${2:Describe the purpose.}",
+      "",
+      "Must:",
+      "  ${3:Describe a requirement.}",
+      "",
+      "Done when:",
+      "  ${4:Describe the completion criteria.}",
+      "$0"
+    ]
+  },
+  "SpecDD scenario": {
+    "prefix": "scenario",
+    "body": ["Scenario: ${1:Behaviour}", "  Given ${2:a precondition}", "  When ${3:an action occurs}", "  Then ${4:an outcome follows}", "$0"]
+  },
+  "SpecDD task": {
+    "prefix": "task",
+    "description": "Insert a task inside a Tasks section",
+    "body": "[ ] ${1:Describe the task.}$0"
+  },
+  "SpecDD tasks": {
+    "prefix": "tasks",
+    "body": ["Tasks:", "  [ ] ${1:Describe the task.}", "$0"]
+  }
+}

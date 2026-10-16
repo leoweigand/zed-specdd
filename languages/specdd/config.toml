@@ -1,0 +1,6 @@
+name = "SpecDD"
+grammar = "specdd"
+path_suffixes = ["sdd"]
+line_comments = ["# "]
+tab_size = 2
+hard_tabs = false

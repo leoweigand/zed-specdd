@@ -1,0 +1,485 @@
+[
+  {
+    "type": "body_entry",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "inline_code",
+          "named": true
+        },
+        {
+          "type": "path",
+          "named": true
+        },
+        {
+          "type": "scenario_step",
+          "named": true
+        },
+        {
+          "type": "symbol_reference",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "continuation",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "inline_code",
+          "named": true
+        },
+        {
+          "type": "path",
+          "named": true
+        },
+        {
+          "type": "symbol_reference",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "scenario_step",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "inline_code",
+          "named": true
+        },
+        {
+          "type": "path",
+          "named": true
+        },
+        {
+          "type": "step_keyword",
+          "named": true
+        },
+        {
+          "type": "symbol_reference",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "section",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "body_entry",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "continuation",
+          "named": true
+        },
+        {
+          "type": "section_header",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "section_header",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "section_name",
+            "named": true
+          }
+        ]
+      },
+      "title": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "section_title",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "section_name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "section",
+          "named": true
+        },
+        {
+          "type": "tasks_section",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "step_keyword",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "task",
+    "named": true,
+    "fields": {
+      "state": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "task_marker",
+            "named": true
+          }
+        ]
+      },
+      "text": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\"",
+            "named": false
+          },
+          {
+            "type": "'",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": "<",
+            "named": false
+          },
+          {
+            "type": "[",
+            "named": false
+          },
+          {
+            "type": "inline_code",
+            "named": true
+          },
+          {
+            "type": "path",
+            "named": true
+          },
+          {
+            "type": "symbol_reference",
+            "named": true
+          },
+          {
+            "type": "text",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "task_id",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "task_marker",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "tasks_header",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "tasks_section",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "body_entry",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "continuation",
+          "named": true
+        },
+        {
+          "type": "task",
+          "named": true
+        },
+        {
+          "type": "tasks_header",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "  ",
+    "named": false
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "'",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "Accepts",
+    "named": false
+  },
+  {
+    "type": "And",
+    "named": false
+  },
+  {
+    "type": "But",
+    "named": false
+  },
+  {
+    "type": "Can modify",
+    "named": false
+  },
+  {
+    "type": "Can read",
+    "named": false
+  },
+  {
+    "type": "Depends on",
+    "named": false
+  },
+  {
+    "type": "Done when",
+    "named": false
+  },
+  {
+    "type": "Example",
+    "named": false
+  },
+  {
+    "type": "Exposes",
+    "named": false
+  },
+  {
+    "type": "Forbids",
+    "named": false
+  },
+  {
+    "type": "Given",
+    "named": false
+  },
+  {
+    "type": "Handles",
+    "named": false
+  },
+  {
+    "type": "Must",
+    "named": false
+  },
+  {
+    "type": "Must not",
+    "named": false
+  },
+  {
+    "type": "Owns",
+    "named": false
+  },
+  {
+    "type": "Platform",
+    "named": false
+  },
+  {
+    "type": "Purpose",
+    "named": false
+  },
+  {
+    "type": "Raises",
+    "named": false
+  },
+  {
+    "type": "References",
+    "named": false
+  },
+  {
+    "type": "Returns",
+    "named": false
+  },
+  {
+    "type": "Scenario",
+    "named": false
+  },
+  {
+    "type": "Spec",
+    "named": false
+  },
+  {
+    "type": "Structure",
+    "named": false
+  },
+  {
+    "type": "Tasks",
+    "named": false
+  },
+  {
+    "type": "Then",
+    "named": false
+  },
+  {
+    "type": "When",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "[ ]",
+    "named": false
+  },
+  {
+    "type": "[!]",
+    "named": false
+  },
+  {
+    "type": "[-]",
+    "named": false
+  },
+  {
+    "type": "[?]",
+    "named": false
+  },
+  {
+    "type": "[X]",
+    "named": false
+  },
+  {
+    "type": "[x]",
+    "named": false
+  },
+  {
+    "type": "`",
+    "named": false
+  },
+  {
+    "type": "inline_code",
+    "named": true
+  },
+  {
+    "type": "path",
+    "named": true
+  },
+  {
+    "type": "section_title",
+    "named": true
+  },
+  {
+    "type": "symbol_reference",
+    "named": true
+  },
+  {
+    "type": "task_id",
+    "named": true
+  },
+  {
+    "type": "{",
+    "named": false
+  }
+]

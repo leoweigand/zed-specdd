@@ -1,0 +1,7 @@
+SpecDD for Zed
+Copyright 2026 Leo Weigand
+
+This project is inspired by https://github.com/specdd/vscode-plugin.
+reference/LANGUAGE.md and LICENSE are copied unchanged from that project at
+commit e73d3bb8738d2a575723146f91bc8ad85b208135, under the Apache License 2.0.
+The Zed integration and Tree-sitter grammar are new implementations.

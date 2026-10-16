@@ -1,0 +1,17 @@
+{
+  "name": "tree-sitter-specdd",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SpecDD language support for Zed and its Tree-sitter grammar",
+  "license": "Apache-2.0",
+  "repository": "github:leoweigand/zed-specdd",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test && node --test test/extension.test.mjs",
+    "check": "npm run generate && npm test"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "0.25.10"
+  }
+}

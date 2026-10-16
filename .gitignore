@@ -1,0 +1,8 @@
+node_modules/
+/grammars/
+/.cache/
+*.wasm
+*.dylib
+*.so
+*.dll
+.DS_Store
