@@ -9,4 +9,4 @@ snippets = ["snippets/specdd.json"]
 
 [grammars.specdd]
 repository = "https://github.com/leoweigand/zed-specdd"
-rev = "main"
+rev = "b4008b7e961d865c009ade6677ce1a7467f67000"
